@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAPHAEL | 公式LINE</title>
+
+  <!-- TikTok Pixel Code Start -->
+  <script>
+  !function (w, d, t) {
+    w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+  var e=ttq._i[t],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+  ;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+    ttq.load('D6O1TG3C77UAPBP8PLH0');
+    ttq.page();
+  }(window, document, 'ttq');
+  </script>
+  <!-- TikTok Pixel Code End -->
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black: #0a0a0a;
+      --white: #ffffff;
+      --accent: #c8a96e;
+      --accent-light: #e8d5a3;
+      --gray: #888888;
+      --bg: #111111;
+    }
+
+    html, body {
+      height: 100%;
+      background-color: var(--black);
+      color: var(--white);
+      font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 0%, rgba(200,169,110,0.18) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 40% at 80% 100%, rgba(200,169,110,0.10) 0%, transparent 60%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .page {
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 48px 24px 64px;
+    }
+
+    .logo {
+      font-size: clamp(2.4rem, 10vw, 4rem);
+      font-weight: 900;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      background: linear-gradient(135deg, var(--accent-light) 0%, var(--accent) 50%, #a07840 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 6px;
+    }
+
+    .logo-sub {
+      font-size: 0.72rem;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: var(--gray);
+      margin-bottom: 40px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 420px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(200,169,110,0.25);
+      border-radius: 20px;
+      padding: 36px 28px 40px;
+      text-align: center;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid rgba(200,169,110,0.5);
+      border-radius: 100px;
+      padding: 4px 14px;
+      margin-bottom: 24px;
+    }
+
+    .card-title {
+      font-size: clamp(1.3rem, 5vw, 1.7rem);
+      font-weight: 800;
+      line-height: 1.45;
+      margin-bottom: 16px;
+      letter-spacing: 0.02em;
+    }
+
+    .card-title span {
+      background: linear-gradient(90deg, var(--accent-light), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .card-desc {
+      font-size: 0.88rem;
+      line-height: 1.8;
+      color: #bbbbbb;
+      margin-bottom: 32px;
+    }
+
+    .btn-line {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 17px 24px;
+      background: linear-gradient(135deg, #06C755 0%, #04a845 100%);
+      color: #ffffff;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      border: none;
+      border-radius: 14px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 8px 32px rgba(6,199,85,0.35);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .btn-line:hover, .btn-line:active {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(6,199,85,0.45);
+    }
+
+    .btn-line svg {
+      flex-shrink: 0;
+    }
+
+    .features {
+      width: 100%;
+      max-width: 420px;
+      margin-top: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 12px;
+      padding: 14px 16px;
+    }
+
+    .feature-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: rgba(200,169,110,0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-size: 1.1rem;
+    }
+
+    .feature-text strong {
+      display: block;
+      font-size: 0.88rem;
+      font-weight: 700;
+      margin-bottom: 3px;
+    }
+
+    .feature-text p {
+      font-size: 0.76rem;
+      color: var(--gray);
+      line-height: 1.6;
+    }
+
+    /* ── キャンペーンの仕組みセクション ── */
+    .campaign-section {
+      width: 100%;
+      max-width: 420px;
+      margin-top: 40px;
+    }
+
+    .campaign-title {
+      font-size: 1.3rem;
+      font-weight: 800;
+      text-align: center;
+      margin-bottom: 20px;
+      background: linear-gradient(135deg, var(--accent-light), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .campaign-card {
+      background: rgba(200,169,110,0.08);
+      border: 1px solid rgba(200,169,110,0.2);
+      border-radius: 16px;
+      padding: 24px 20px;
+      margin-bottom: 14px;
+    }
+
+    .campaign-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: var(--accent-light);
+    }
+
+    .campaign-card p {
+      font-size: 0.82rem;
+      color: #bbbbbb;
+      line-height: 1.8;
+    }
+
+    /* ── 特商法・個人情報セクション ── */
+    .legal-section {
+      width: 100%;
+      max-width: 420px;
+      margin-top: 40px;
+    }
+
+    .legal-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 28px 22px;
+      margin-bottom: 16px;
+    }
+
+    .legal-card h2 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: var(--white);
+    }
+
+    .legal-card p {
+      font-size: 0.8rem;
+      color: #aaaaaa;
+      line-height: 1.9;
+      margin-bottom: 4px;
+    }
+
+    .legal-card .note {
+      font-size: 0.72rem;
+      color: #777777;
+      margin-top: 8px;
+    }
+
+    .footer {
+      margin-top: 48px;
+      font-size: 0.68rem;
+      color: #444;
+      text-align: center;
+      letter-spacing: 0.08em;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <div class="logo">RAPHAEL</div>
+    <div class="logo-sub">Official Community</div>
+
+    <div class="card">
+      <div class="badge">LINE Official</div>
+      <h1 class="card-title">
+        RAPHAELの<span>公式LINE</span>に<br>参加しよう
+      </h1>
+      <p class="card-desc">
+        最新情報・限定コンテンツ・メンバー限定の<br>
+        お知らせをLINEでいち早くお届けします。<br>
+        まずは友だち追加から。
+      </p>
+
+      <a class="btn-line" href="https://lin.ee/JIPXfcW" id="lineBtn" onclick="handleClick()">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2C6.48 2 2 6.02 2 11c0 3.07 1.63 5.79 4.14 7.5L5.5 22l3.86-1.93C10.38 20.34 11.18 20.5 12 20.5c5.52 0 10-4.02 10-9S17.52 2 12 2z" fill="white"/>
+          <path d="M17.5 13.5h-2v-4h2v4zm-3.5 0h-2v-4h2v4zm-3.5 0h-2v-4h2v4z" fill="#06C755"/>
+        </svg>
+        友だち追加する（無料）
+      </a>
+    </div>
+
+    <!-- キャンペーンの仕組み -->
+    <div class="campaign-section">
+      <h2 class="campaign-title">キャンペーンの仕組み</h2>
+
+      <div class="campaign-card">
+        <h3>広告収入の還元</h3>
+        <p>本キャンペーンで使用されるプラットフォームやメディアでの広告収入の一部を、賞品購入の資金として活用しています。つまり、皆さまが普段目にしている広告が、誰かの夢を叶える原資となるのです。</p>
+      </div>
+
+      <div class="campaign-card">
+        <h3>協賛企業からの支援</h3>
+        <p>多くの企業が本キャンペーンの趣旨に賛同し、製品やサービスを特別価格で提供してくださっています。企業の協力により、より多くの方に賞品をお届けすることが可能になりました。</p>
+      </div>
+
+      <div class="campaign-card">
+        <h3>社会貢献の一環</h3>
+        <p>私たちは、この取り組みを単なる懸賞企画ではなく、社会貢献活動の一つと位置付けています。利益の一部を還元することで、より多くの方々に幸せや希望をお届けしたいと考えています。</p>
+      </div>
+    </div>
+
+    <!-- 特定商取引法に基づく表記 -->
+    <div class="legal-section">
+      <div class="legal-card">
+        <h2>【特定商取引法に基づく表記・運営者情報】</h2>
+        <p>・事業者名: 株式会社ワンカラット</p>
+        <p>・所在地: 〒150-0044 東京都渋谷区円山町20-1 新大宗道玄坂上ビル</p>
+        <p>・お問い合わせ: fafihina@hamham.uk</p>
+        <p class="note">※お電話でのお問い合わせは受け付けておりません。上記メールまでご連絡ください。</p>
+      </div>
+
+      <div class="legal-card">
+        <h2>【個人情報の取り扱いについて】</h2>
+        <p>当サイトはお客様の個人情報を適切に保護することの重要性を認識し、法令遵守および安全な取り扱いに努めます。</p>
+        <p style="margin-top:10px;">取得した個人情報は、お問い合わせへの対応およびサービスのご案内にのみ利用し、法令に基づく場合を除き第三者への提供は行いません。</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      &copy; 2025 RAPHAEL. All rights reserved.
+    </div>
+
+  </div>
+
+  <script>
+    function handleClick() {
+      if (window.ttq) {
+        ttq.track('Contact', { content_name: 'LINE Add Friend' });
+      }
+    }
+  </script>
+</body>
+</html>
